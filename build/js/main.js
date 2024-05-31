@@ -1,6 +1,5 @@
 const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-button");
-
   const mobileMenu = document.getElementById("mobile-menu");
 
   const toggleMenu = () => {
@@ -12,4 +11,6 @@ const initApp = () => {
   mobileMenu.addEventListener("click", toggleMenu);
 };
 
-document.addEventListener("DOMContendLoaded", initApp);
+document.addEventListener("DOMContentLoaded", function () {
+  initApp();
+});
